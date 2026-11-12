@@ -1,13 +1,9 @@
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-.venv/
-venv/
-env/
-ENV/
-.env
-
+# Build and test caches
 build/
 dist/
 *.egg-info/
@@ -15,6 +11,31 @@ dist/
 .mypy_cache/
 .ruff_cache/
 
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor and operating-system files
 .DS_Store
-.idea/
 .vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Notebook checkpoints
+.ipynb_checkpoints/
